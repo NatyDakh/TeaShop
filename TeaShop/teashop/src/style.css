@@ -35,7 +35,6 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
-    position: relative;
 }
 
 .social img{
@@ -52,45 +51,3 @@ body {
     flex-wrap: wrap;
 }
 
-.card{
-    width: 264px;
-    height: 436px;
-    margin: 40px 40px;
-    border: 2px #424106 solid;
-    box-sizing: content-box;
-}
-
-.card p{
-    color: #424106;
-    font-size: 20px;
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    word-wrap: break-word;
-    margin-inline-start: 23px;
-}
-
-.card a{
-    text-decoration: none;
-    color: #424106;
-    font-size: 14px;
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    line-height: 19px;
-    word-wrap: break-word;
-}
-
-.look{
-    margin-left: 23px;
-    margin-bottom:40px;
-}
-
-
-.little_bottom{
-    width: 98px;
-    height: 30px;
-    flex-shrink: 1;
-    border-radius: 6px;
-    border: 3px solid #A4B07E;
-    padding: 6px 16px;
-    margin-left: 50px;
-}
