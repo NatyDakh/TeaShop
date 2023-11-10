@@ -28,7 +28,7 @@ import './style.css'
                     <img src={rect} alt=""/>
                     <p className="name">1</p>
                     <p className="cost">234</p>
-                    <a href="#" className="look">Cмотреть</a>
+                    <a href="/product" className="look">Cмотреть</a>
                     <a className = "little_bottom" style ={styles} onClick={ this.handleClick}>Корзина</a>
                 </div>
             );

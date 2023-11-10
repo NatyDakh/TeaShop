@@ -6,9 +6,9 @@ function Navbar(){
             <p id='Teashop'>Teashop</p>
         </div>
         <ul>
-            <li><a href="#">Корзина</a></li>
-            <li><a href="#" >Главная</a></li>
-            <li><a href="#" className = "bottom">Войти</a></li>
+            <li><a href="/bag">Корзина</a></li>
+            <li><a href="/" >Главная</a></li>
+            <li><a href="/login" className = "bottom">Войти</a></li>
         </ul>
     </nav>
     )

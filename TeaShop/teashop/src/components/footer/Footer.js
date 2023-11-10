@@ -9,17 +9,17 @@ function Footer(){
     return (
         <footer>
         <ul>
-            <li><a href="#" id="left_element">Корзина</a></li>
-            <li><a href="#" id="logo">Teashop</a></li>
-            <li><a href="#" id="right_element">Акаунт</a></li>
+            <li><a href="/bag" id="left_element">Корзина</a></li>
+            <li><a href="/" id="logo">Teashop</a></li>
+            <li><a href="/login" id="right_element">Акаунт</a></li>
         </ul>
         <div id="line"></div>
         <div className="social">
-            <a href="#"> <img src={vk} alt=""/></a>
-            <a href="#"> <img src={inst} alt=""/></a>
-            <a href="#"> <img src={twit} alt=""/></a>
-            <a href="#"> <img src={fb} alt=""/></a>
-            <a href="#"> <img src={you} alt=""/></a>
+            <a href="/404"> <img src={vk} alt=""/></a>
+            <a href="/404"> <img src={inst} alt=""/></a>
+            <a href="/404"> <img src={twit} alt=""/></a>
+            <a href="/404"> <img src={fb} alt=""/></a>
+            <a href="/404"> <img src={you} alt=""/></a>
         </div>
     </footer>
     )

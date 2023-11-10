@@ -1,11 +1,15 @@
-import './style.css'
+import './style/style.css'
 import Card from "./components/card/Card"
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import React from "react";
+import {Route, Routes} from "react-router-dom";
+import Page_404 from "./404";
+
 
 function App() {
   return (
-    <div className="App">
+    <div id="content">
         <Navbar />
         <main>
             <div className="block">
