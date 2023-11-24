@@ -1,0 +1,78 @@
+#information{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+#picture{
+    position: relative;
+    width: 656px;
+    height: 468px;
+    background: rgba(109, 73, 48, 0.57);
+}
+
+#text{
+    text-align: left;
+    width: 362px;
+}
+
+#text h1{
+    color: #424106;
+    text-align: left;
+    font-family: Roboto, sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+    line-height: 140.625%; /* 59.063px */
+    width: 254px;
+    height: 46.013px;
+}
+
+#cost{
+    margin-top: 70px;
+    color: #424106;
+    font-family: Roboto, sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#buy{
+    width: 226px;
+    height: 45px;
+    border-radius: 9px;
+    border: 3px solid #A4B07E;
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 15px;
+}
+
+#buy a{
+    text-decoration: none;
+    color: #424106;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.766%; /* 24.258px */
+}
+
+#say{
+    margin-left: 150px;
+    margin-bottom: 65px;
+}
+
+#say h1{
+    margin: 0;
+    text-align: left;
+}
+
+#say p{
+    color: rgba(109, 73, 48, 0.69);
+    font-size: 30px;
+    margin-left: 30px;
+}
