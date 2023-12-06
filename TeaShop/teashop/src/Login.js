@@ -2,7 +2,7 @@ import "./style/login.css"
 
 function Login(){
     return(
-        <body id="login">
+        <body className="login">
         <div  id="card">
             <h1> Вход </h1>
             <div className="create-line-left">
@@ -12,9 +12,9 @@ function Login(){
                 <p> E-mail: </p>
             </div>
             <div className="bottom_in">
-                <a id="in" href="/">Войти</a>
+                <a className="in" href="/">Войти</a>
             </div>
-            <a id="reg" href="/registration"> Регистрация</a>
+            <a className="reg" href="/registration"> Регистрация</a>
         </div>
         </body>
     );

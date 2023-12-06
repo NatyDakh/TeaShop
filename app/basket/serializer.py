@@ -5,7 +5,7 @@ from user.user_serializers import UserSerializers
 
 
 class BasketSerializers(serializers.ModelSerializer):
-    product = ProductSerializers()
+    product = ProductSerializers(read_only=True)
     user = UserSerializers()
 
     class Meta:
