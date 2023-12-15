@@ -12,7 +12,7 @@ const List_BagSlice = createSlice({
             state.list.push(action.payload)
         },
         deleteFromListCard: (state, action) =>{
-            state.Iist=state.Iist.filter((item) => item.id !== action.payload)
+            state.list=state.Iist.filter((item) => item.id !== action.payload)
         }
     }
 });
