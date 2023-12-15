@@ -10,18 +10,18 @@ import Prod from "./components/product/Product";
 
 function Product(){
     const dispatch = useDispatch();
-    const [[setstyle , status], set] = useState([  'rgba(66, 65, 6)', false]);
+    const [color,setColor] = useState('rgba(66, 65, 6)');
     const handelClik = (e) =>{
         e.stopPropagation();
-        if (status === false) {
+        if (color === 'rgba(66, 65, 6)') {
             dispatch(setListCard(<Prod/>));
-            set(['#A4B07E', true]);
+            setColor('#A4B07E');
         } else {
-            set([ 'rgba(66, 65, 6)', false]);
+            setColor('rgba(66, 65, 6)');
         }
     }
     return(
-        <body>
+        <div>
         <Navbar/>
         <div className="information">
             <div className="picture"></div>
@@ -33,7 +33,7 @@ function Product(){
                 <p className='cost'> 450 P</p>
                 <div className="buy">
                     <a onClick={handelClik}
-                       style={{color:  setstyle}}>В корзину</a>
+                       style={{color:  color}}>В корзину</a>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@ function Product(){
             <p>Нет отзывов</p>
         </div>
         <Footer/>
-        </body>
+        </div>
     );
 }
 

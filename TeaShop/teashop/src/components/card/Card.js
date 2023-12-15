@@ -11,14 +11,14 @@ import {Link} from "react-router-dom";
 
 function  Card() {
     const dispatch= useDispatch();
-    const [[setstyle , status], set] = useState([ '#FFFAF4', false]);
+    const [color, setColor] = useState('#FFFAF4');
     const handelClik = (e) =>{
         e.stopPropagation();
-        if (status === false) {
+        if (color === '#FFFAF4') {
             dispatch(setListCard(<Prod/>));
-            set(['#A4B07E', true]);
+            setColor('#A4B07E');
         } else {
-            set([ '#FFFAF4', false]);
+            setColor('#FFFAF4');
         }
     }
     return (
@@ -27,7 +27,7 @@ function  Card() {
             <p> 1</p>
             <p>234</p>
             <Link to="/product" className="look">Cмотреть</Link>
-            <a className="little_bottom" onClick={handelClik} style={{background:  setstyle}}>Корзина</a>
+            <a className="little_bottom" onClick={handelClik} style={{background:  color}}>Корзина</a>
         </div>
     );
 }
