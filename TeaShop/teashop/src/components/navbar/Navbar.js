@@ -1,14 +1,17 @@
 import './style.css'
+import {useState} from "react";
+import {Link} from "react-router-dom";
 function Navbar(){
+    const [modalActive, setModalActive] = useState(true)
     return (
         <nav>
         <div className="logo">
             <p id='Teashop'>Teashop</p>
         </div>
         <ul>
-            <li><a href="/bag">Корзина</a></li>
-            <li><a href="/" >Главная</a></li>
-            <li><a href="/login" className = "bottom">Войти</a></li>
+            <li><Link to="/bag">Корзина</Link></li>
+            <li><Link to="/" >Главная</Link></li>
+            <li><Link to="/login" className = "bottom">Войти</Link></li>
         </ul>
     </nav>
     )

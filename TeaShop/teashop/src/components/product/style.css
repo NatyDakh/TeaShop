@@ -1,4 +1,4 @@
-#frame1{
+.frame1{
     width: 1145px;
     height: 100px;
     border: 1px solid #424106;
@@ -8,13 +8,13 @@
     align-items: center;
 }
 
-#rectangle{
+.rectangle{
     width: 67.941px;
     height: 85px;
     background: rgba(66, 65, 6, 0.55);
 }
 
-#delete{
+.delete{
     width: 165.855px;
     height: 48px;
     border-radius: 9px;
@@ -22,6 +22,6 @@
     text-align: center;
     align-items: center;
 }
-#delete p{
+.delete p{
     margin: 14px;
 }

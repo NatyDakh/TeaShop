@@ -1,13 +1,13 @@
 import "./style.css"
 
-function Product(){
+function Prod(){
     return(
         <body>
-        <div id="frame1">
-            <div id="rectangle"></div>
+        <div className="frame1">
+            <div className="rectangle"></div>
             <p>Чай 1</p>
             <p>580 P</p>
-            <div id="delete">
+            <div className="delete">
                 <p>Удалить</p>
             </div>
         </div>
@@ -15,4 +15,4 @@ function Product(){
     );
 }
 
-export default Product;
+export default Prod;

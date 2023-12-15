@@ -8,20 +8,26 @@ import Payment from "./Payment";
 import Login from "./Login";
 import Bag from "./Bag";
 import Product from "./Product";
+import {store} from "./store";
+import {Provider}  from 'react-redux';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+    <Provider store={store}>
       <BrowserRouter>
+          <main className="main">
           <Routes>
-              <Route path="/" exact element={<App/>}/>
-              <Route path="/404" exact element={<Page_404/>} />
-              <Route path="/registration" exact element={<Registration/>}/>
-              <Route path="/payment" exact element={<Payment/>} />
-              <Route path="/login" exact element={<Login/>}/>
-              <Route path="/bag" exact element={<Bag/>}/>
-              <Route path="/product" exact element={<Product/>}/>
+              <Route path="/"  element={<App/>}/>
+              <Route path="/404" element={<Page_404/>} />
+              <Route path="/registration" element={<Registration/>}/>
+              <Route path="/payment" element={<Payment/>} />
+              <Route path="/login" element={<Login/>}/>
+              <Route path="/bag" element={<Bag/>}/>
+              <Route path="/product" element={<Product/>}/>
           </Routes>
+          </main>
       </BrowserRouter>
+    </Provider>
 );
 

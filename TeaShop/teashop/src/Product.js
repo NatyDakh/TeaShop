@@ -1,8 +1,25 @@
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import "./style/product.css"
+import {Link} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import React, {useState} from "react";
+import {setListCard} from "./List_bag";
+import Prod from "./components/product/Product";
+
 
 function Product(){
+    const dispatch = useDispatch();
+    const [[setstyle , status], set] = useState([  'rgba(66, 65, 6)', false]);
+    const handelClik = (e) =>{
+        e.stopPropagation();
+        if (status === false) {
+            dispatch(setListCard(<Prod/>));
+            set(['#A4B07E', true]);
+        } else {
+            set([ 'rgba(66, 65, 6)', false]);
+        }
+    }
     return(
         <body>
         <Navbar/>
@@ -15,7 +32,8 @@ function Product(){
                 <p>Товар есть в наличии</p>
                 <p className='cost'> 450 P</p>
                 <div className="buy">
-                    <a href='/bag'>В корзину</a>
+                    <a onClick={handelClik}
+                       style={{color:  setstyle}}>В корзину</a>
                 </div>
             </div>
         </div>
