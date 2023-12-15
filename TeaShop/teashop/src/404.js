@@ -10,8 +10,8 @@ function Page_404() {
             <Navbar />
             <main>
                 <h1>Ошибка 404</h1>
-                <div id ="return">
-                    <p id="first_page"> Главная страница</p>
+                <div className ="return">
+                    <p className="first_page"> Главная страница</p>
                 </div>
             </main>
             <Footer/>

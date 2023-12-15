@@ -14,7 +14,7 @@ function Bag(){
             <h2> Итог: 680P</h2>
         </div>
         <div className="display">
-            <div id="formied"><p>Оформить заказ</p></div>
+            <div className="formied"><p>Оформить заказ</p></div>
         </div>
         <Footer/>
         </body>

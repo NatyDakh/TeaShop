@@ -1,4 +1,4 @@
-#login{
+.login{
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -62,11 +62,11 @@
     line-height: 134.766%; /* 26.953px */
 }
 
-#in{
+.in{
     color: #424106;
 }
 
-#reg{
+.reg{
     margin-left: 320px;
     color: #6D4930;
 }
