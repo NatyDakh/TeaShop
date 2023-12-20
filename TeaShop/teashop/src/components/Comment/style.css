@@ -1,0 +1,7 @@
+.comm{
+    display: flex;
+    justify-content: left;
+}
+.comm p{
+    display: inline-block;
+}

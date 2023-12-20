@@ -1,8 +1,11 @@
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import "./style/pay.css"
+import {useSelector} from "react-redux";
 
 function Payment(){
+    const list_card = useSelector((state) => state.list_card_bag.list);
+    let total_price = list_card.reduce((count, pro) => {count += pro.cost; return count}, 0);
     return (
         <body>
         <Navbar/>
@@ -21,7 +24,7 @@ function Payment(){
                             <p> E-mail: </p>
                         </div>
                         <p className="result"> Итог: </p>
-                        <p className="result"> 940 P </p>
+                        <p className="result"> {total_price} P </p>
                     </div>
                 </div>
                 <div className="block1">
@@ -32,9 +35,6 @@ function Payment(){
                         </div>
                         <div className="line">
                             <p> Время: </p>
-                        </div>
-                        <div className="line">
-                            <p> Масса: </p>
                         </div>
                         <p className="result"> Способ оплаты: </p>
                         <p className="result"> Карта </p>

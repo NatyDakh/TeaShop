@@ -9,10 +9,11 @@ const List_BagSlice = createSlice({
     initialState: initialState,
     reducers :{
         setListCard: (state, action)=>{
-            state.list.push(action.payload)
+            state.list.push(action.payload);
         },
         deleteFromListCard: (state, action) =>{
-            state.Iist=state.Iist.filter((item) => item.id !== action.payload)
+            console.log(state, action);
+            state.list = state.list.filter(pro => pro.index !== action.payload);
         }
     }
 });

@@ -1,14 +1,22 @@
 import "./style.css"
+import {deleteFromListCard, setListCard} from "../../reduces/List_bag";
+import {useDispatch} from "react-redux";
+import React from "react";
 
-function Prod(){
+function Prod({product}){
+    const dispatch= useDispatch();
+    const handelClik = (e) =>{
+        e.stopPropagation();
+        dispatch(deleteFromListCard(product.index));
+    }
     return(
         <body>
         <div className="frame1">
             <div className="rectangle"></div>
-            <p>Чай 1</p>
-            <p>580 P</p>
+            <p>{product.name}</p>
+            <p>{product.cost}</p>
             <div className="delete">
-                <p>Удалить</p>
+                <p  onClick={handelClik}>Удалить</p>
             </div>
         </div>
         </body>
