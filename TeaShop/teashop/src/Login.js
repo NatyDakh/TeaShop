@@ -1,4 +1,6 @@
 import "./style/login.css"
+import {Link} from "react-router-dom";
+
 
 function Login(){
     return(
@@ -12,9 +14,9 @@ function Login(){
                 <p> E-mail: </p>
             </div>
             <div className="bottom_in">
-                <a className="in" href="/">Войти</a>
+                <Link className="in" to="/">Войти</Link>
             </div>
-            <a className="reg" href="/registration"> Регистрация</a>
+            <Link className="reg" to="/registration"> Регистрация</Link>
         </div>
         </body>
     );
