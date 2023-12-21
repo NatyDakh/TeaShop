@@ -12,7 +12,6 @@ const List_BagSlice = createSlice({
             state.list.push(action.payload);
         },
         deleteFromListCard: (state, action) =>{
-            console.log(state, action);
             state.list = state.list.filter(pro => pro.index !== action.payload);
         }
     }
