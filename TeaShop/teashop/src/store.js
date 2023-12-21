@@ -1,6 +1,6 @@
 import {configureStore} from '@reduxjs/toolkit'
-import {List_BagReduxer} from "./reduces/List_bag";
-import {ProductCardRedcer} from "./reduces/Poduct_page";
+import {List_BagReduxer} from "./List_bag";
+import {ProductCardRedcer} from "./Poduct_page";
 
 export  const  store = configureStore({
     reducer: {

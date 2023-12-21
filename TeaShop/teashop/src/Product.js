@@ -3,7 +3,7 @@ import Footer from "./components/footer/Footer";
 import "./style/product.css"
 import {useDispatch, useSelector} from "react-redux";
 import React, {useEffect, useState} from "react";
-import {setListCard} from "./reduces/List_bag";
+import {setListCard} from "./List_bag";
 import CardList from "./components/card/CardList";
 import Comment from "./components/Comment/Comment";
 

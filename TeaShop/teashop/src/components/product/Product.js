@@ -1,5 +1,5 @@
 import "./style.css"
-import {deleteFromListCard, setListCard} from "../../reduces/List_bag";
+import {deleteFromListCard, setListCard} from "../../List_bag";
 import {useDispatch} from "react-redux";
 import React from "react";
 

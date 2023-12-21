@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import {useDispatch} from "react-redux";
-import {setListCard} from "../../reduces/List_bag";
-import {setProductCard} from "../../reduces/Poduct_page";
+import {setListCard} from "../../List_bag";
+import {setProductCard} from "../../Poduct_page";
 import rect from "../../image/Rectangle.svg";
 import './style.css'
 
