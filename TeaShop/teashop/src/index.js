@@ -24,7 +24,7 @@ root.render(
               <Route path="/payment" element={<Payment/>} />
               <Route path="/login" element={<Login/>}/>
               <Route path="/bag" element={<Bag/>}/>
-              <Route path="/product" element={<Product/>}/>
+              <Route path="/product/:name"  element={<Product/>}/>
           </Routes>
           </main>
       </BrowserRouter>

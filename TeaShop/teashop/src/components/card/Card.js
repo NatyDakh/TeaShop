@@ -1,33 +1,38 @@
 import React, {useState} from "react";
+import {Link} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {setListCard} from "../../List_bag";
+import {setProductCard} from "../../Poduct_page";
 import rect from "../../image/Rectangle.svg";
 import './style.css'
-import {useDispatch} from "react-redux";
-import {setListCard, deleteFromListCard} from "../../List_bag";
-import Prod from "../product/Product";
-import {Link} from "react-router-dom";
+
 
 
 // eslint-disable-next-line no-undef
 
-function  Card() {
+function  Card({product}) {
     const dispatch= useDispatch();
     const [color, setColor] = useState('#FFFAF4');
-    const handelClik = (e) =>{
+    const handelClikBag = (e) =>{
         e.stopPropagation();
         if (color === '#FFFAF4') {
-            dispatch(setListCard(<Prod/>));
+            dispatch(setListCard(product));
             setColor('#A4B07E');
         } else {
             setColor('#FFFAF4');
         }
     }
+    const handelClickLook = (e) =>{
+        e.stopPropagation();
+        dispatch(setProductCard(product));
+    }
     return (
         <div className="card">
             <img src={rect} alt=""/>
-            <p> 1</p>
-            <p>234</p>
-            <Link to="/product" className="look">Cмотреть</Link>
-            <a className="little_bottom" onClick={handelClik} style={{background:  color}}>Корзина</a>
+            <p>{product.name}</p>
+            <p>{product.cost}</p>
+            <Link to={`/product/${product.name}$`} className="look" onClick={handelClickLook}>Cмотреть</Link>
+            <a className="little_bottom" onClick={handelClikBag} style={{background:  color}}>Корзина</a>
         </div>
     );
 }

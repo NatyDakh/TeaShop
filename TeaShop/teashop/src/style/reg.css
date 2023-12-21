@@ -50,10 +50,20 @@ p {
     flex-shrink: 0;
     border-radius: 5px;
     border: 3px solid #A4B07E;
-    margin-top: 73px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
+    margin: 73px auto 100px;
     padding-left: 52px;
     padding-right: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom_reg a{
+    text-decoration: none;
+    color: #424106;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

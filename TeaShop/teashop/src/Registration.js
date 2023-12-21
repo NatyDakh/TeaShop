@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import "./style/reg.css"
+import {Link} from "react-router-dom";
 
 function Registration(){
     return(
@@ -21,7 +22,7 @@ function Registration(){
                 <p>Пароль: </p>
             </div>
             <div className="bottom_reg">
-                <p>Зарегистрироваться</p>
+                <Link to={'/'}>Зарегистрироваться</Link>
             </div>
         </main>
         <Footer/>
